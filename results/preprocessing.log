@@ -1,0 +1,14 @@
+2025-03-16 21:41:48,208 [INFO] Total molecules read from CSV: 4054
+2025-03-16 21:41:48,217 [INFO] Molecules after dropping missing SMILES: 4050
+2025-03-16 21:41:48,500 [INFO] Molecules after removing invalid SMILES: 4050
+2025-03-16 21:41:48,501 [INFO] Molecules with 'nm' as Standard Units: 3963
+2025-03-16 21:41:48,503 [INFO] Molecules after converting Standard Value to numeric: 3958
+2025-03-16 21:41:49,152 [INFO] Molecules after SMILES cleaning: 3958
+2025-03-16 21:41:49,155 [INFO] Molecules outside of 'Gray Area': 3141
+2025-03-16 21:41:49,157 [INFO] Molecules after removing duplicates: 2707
+2025-03-16 21:41:49,157 [INFO] Active molecules: 1664 (61.47%), Inactive molecules: 1043 (38.53%)
+2025-03-16 21:41:49,166 [INFO] Preprocessed data saved to results/preprocessed_data.csv
+2025-03-16 21:41:49,166 [INFO] Starting fingerprint calculation.
+2025-03-16 21:41:49,166 [INFO] DataFrame has 2707 rows.
+2025-03-16 21:41:53,813 [INFO] Fingerprint data saved to results/fingerprint_data.csv
+2025-03-16 21:41:53,813 [INFO] Fingerprint calculation completed. Final DataFrame size: 2707

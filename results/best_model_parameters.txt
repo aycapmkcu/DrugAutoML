@@ -1,0 +1,5 @@
+Best Model: LGBM
+Parameters:
+  learning_rate: 0.23230192928006807
+  max_depth: 9
+  n_estimators: 210
