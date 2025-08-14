@@ -33,5 +33,19 @@ It automates every stage — from reading raw datasets to generating predictions
 - **Prediction on New Data**  
   Scores unlabeled or labeled molecules, outputs probabilities and predictions, and computes metrics if labels are available.
 
+---
+
+## 📦 Installation
+
+Clone and install locally:
+```bash
+git clone https://github.com/aycapmkcu/DrugAutoML.git
+cd DrugAutoML
+pip install .
+
+
+- **Prediction on New Data**  
+  Scores unlabeled or labeled molecules, outputs probabilities and predictions, and computes metrics if labels are available.
+
 
 
