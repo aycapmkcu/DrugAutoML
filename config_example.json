@@ -1,0 +1,67 @@
+{
+    "preprocessing": {
+        "path": "dataset.csv",
+        "smiles_col": "Smiles",
+        "activity_col": "pChEMBL Value",
+        "activity_type": "px",
+        "active_cutoff": 6.0,
+        "inactive_cutoff": 5.0,
+        "standardize_smiles": true,
+        "save_results": true,
+        "results_dir": "results"
+    },
+    "featurization": {
+        "fp_type": "ECFP",
+        "radius": 2,
+        "nbits": 2048,
+        "use_counts": false,
+        "drop_constant": true,
+        "save_results": true,
+        "results_dir": "results"
+    },
+    "splitting": {
+        "method": "scaffold",
+        "frac_train": 0.8,
+        "random_state": 42,
+        "save_results": true,
+        "results_dir": "results"
+    },
+    "model_selection": {
+        "scoring": "mcc",
+        "n_trials_per_algo": 10,
+        "cv_splits": 5,
+        "cv_repeats": 3,
+        "random_state": 42,
+        "results_dir": "results"
+    },
+    "model_finalization": {
+        "results_dir": "results",
+        "algo": "auto",
+        "calibration": "isotonic",
+        "cv_folds": 5,
+        "threshold_strategy": "max_mcc",
+        "save_model": true
+    },
+    "explainability": {
+        "results_dir": "results",
+        "gallery_top_bits": 6,
+        "gallery_examples_per_bit": 6,
+        "gallery_cols": 3,
+        "gallery_sub_img": [280, 240],
+        "bw_base": true,
+        "hide_atom_labels": true,
+        "highlight_rgb": [0.0, 0.75, 1.0],
+        "highlight_radius": 0.6,
+        "also_beeswarm": true
+    },
+    "prediction": {
+        "results_dir": "results",
+        "input_path": "external_test.csv",
+        "smiles_col": "Smiles",
+        "label_col": "Label",
+        "activity_type": "binary",
+        "threshold_override": null,
+        "standardize_smiles": true,
+        "save_results": true
+    }
+}
